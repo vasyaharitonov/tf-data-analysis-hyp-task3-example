@@ -7,4 +7,4 @@ chat_id = 291445198
 
 def solution(x: np.array, y: np.array) -> bool:
     alpha = 0.02
-    return mannwhitneyu(x, y, alternative='greater').pvalue < alpha
+    return mannwhitneyu(x, y).pvalue < alpha
